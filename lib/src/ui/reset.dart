@@ -19,6 +19,7 @@ class _StoryTellerResetState extends State<StoryTellerReset> {
   Future<bool> check() async {
     var connectivityResult = await (Connectivity().checkConnectivity());
     if (connectivityResult == ConnectivityResult.mobile) {
+      print("connectivity result ====>")
       return true;
     } else if (connectivityResult == ConnectivityResult.wifi) {
       return true;
